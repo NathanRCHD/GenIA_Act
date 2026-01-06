@@ -14,9 +14,9 @@ url = "https://k2vm-74.mde.epf.fr/api/chat/completions"
 TEST_MODEL = "n8n"
 
 # Modèle juge (vérificateur)
-JUDGE_MODEL = "n8n-judge"  # <-- mettez ici le nom du modèle vérificateur dans OpenWebUI (ex: "qwen2.5", "llama3.1", etc.)
+JUDGE_MODEL = "llama3.2:latest"  # <-- mettez ici le nom du modèle vérificateur dans OpenWebUI (ex: "qwen2.5", "llama3.1", etc.)
 
-INPUT_CSV = "eu_ai_act_qna_gold.csv"
+INPUT_CSV = "base_csv.csv"
 OUTPUT_CSV = "eu_ai_act_qna_scored.csv"
 
 SLEEP_BETWEEN_CALLS_S = 0.2
