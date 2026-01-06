@@ -24,6 +24,6 @@ def chat_with_model(token, message="bonjour"):
 import pandas as pd
 df = pd.read_csv('eu_ai_act_qna_gold.csv')
 for index, row in df.iterrows():
-    print(f"Row {index}: {row['input']}")
-    response = chat_with_model(token, message=row['input'])
+    print(f"Row {index}: {row['question']}")
+    response = chat_with_model(token, message=row['question'])
     print(f"Response: {response}")
